@@ -1,0 +1,23 @@
+name: deploy_to_gh
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Copy Files
+      run: |
+        mkdir public 
+        cp -r home/* public/
+    - name: Build
+      uses: wjftu/vuepress_1.x_compiler@v1
+      env:
+        SOURCE_DIR: designPattern algorithmPractice
+    - name: Deploy
+      uses: wjftu/git_push_action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        TARGET_REPO: wjftu/wjftu.github.io
+        TARGET_BRANCH: master
+        SOURCE_DIR: public
