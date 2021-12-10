@@ -9,7 +9,7 @@ jobs:
     - name: Copy Files
       run: |
         mkdir public 
-        cp -r home/* public/
+        cp -r home/. public/
     - name: Build
       uses: wjftu/vuepress_1.x_compiler@v1
       env:
