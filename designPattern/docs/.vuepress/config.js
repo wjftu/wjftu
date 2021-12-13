@@ -30,5 +30,5 @@ module.exports={
       }
     ]
   ],
-  dest: '../public/designPattern'
+  dest: '../public/note/designPattern'
 }

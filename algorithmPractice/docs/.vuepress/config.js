@@ -21,5 +21,5 @@ module.exports={
       }
     ]
   ],
-  dest: '../public/algorithmPractice'
+  dest: '../public/note/algorithmPractice'
 }
