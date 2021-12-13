@@ -11,7 +11,7 @@ jobs:
         mkdir public 
         cp -r home/. public/
     - name: Build
-      uses: wjftu/vuepress_1.x_compiler@v1
+      uses: wjftu/vuepress_1.x_compiler@master
       env:
         SOURCE_DIR: designPattern algorithmPractice
     - name: Deploy
