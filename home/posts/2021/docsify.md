@@ -187,4 +187,4 @@ min 版本的是去掉一些空格回车的，体积小一点
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
 ~~~
 
-注意这里已经有了 docsify 所需的 js 文件，如果引用 2 次会导致问题，如无法下拉页面。
+注意这里已经有了 docsify.min.js ，如果引用 2 次会导致问题，如无法下拉页面。
